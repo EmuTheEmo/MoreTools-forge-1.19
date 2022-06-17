@@ -1,6 +1,7 @@
 package com.jay.moretools.item;
 
 import com.jay.moretools.MoreTools;
+import com.jay.moretools.item.custom.ObsidianArmorItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
@@ -44,16 +45,16 @@ public class ModItems {
 
     //Obsidian Armor
     public static final RegistryObject<Item> OBSIDIAN_HELMET = ITEMS.register("obsidian_helmet",
-            () -> new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.HEAD,
+            () -> new ObsidianArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModCreativeModTab.MTOOLS_TAB)));
     public static final RegistryObject<Item> OBSIDIAN_CHESTPLATE = ITEMS.register("obsidian_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.CHEST,
+            () -> new ObsidianArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.CHEST,
                     new Item.Properties().tab(ModCreativeModTab.MTOOLS_TAB)));
     public static final RegistryObject<Item> OBSIDIAN_LEGGINGS = ITEMS.register("obsidian_leggings",
-            () -> new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.LEGS,
+            () -> new ObsidianArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.LEGS,
                     new Item.Properties().tab(ModCreativeModTab.MTOOLS_TAB)));
     public static final RegistryObject<Item> OBSIDIAN_BOOTS = ITEMS.register("obsidian_boots",
-            () -> new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.FEET,
+            () -> new ObsidianArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModTab.MTOOLS_TAB)));
 
     public static void register(IEventBus eventBus) {

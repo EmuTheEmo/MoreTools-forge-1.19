@@ -1,5 +1,6 @@
 package com.jay.moretools;
 
+import com.jay.moretools.events.ObsidianArmorEvent;
 import com.jay.moretools.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,6 +29,7 @@ public class MoreTools
         eventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(new ObsidianArmorEvent());
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

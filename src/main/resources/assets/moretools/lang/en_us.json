@@ -1,5 +1,7 @@
 {
   "itemGroup.mtoolstab": "More Tools",
+  "tooltip.moretools.obsidian_armor.tooltip.blastproof": "§9Blastproof",
+  "tooltip.moretools.obsidian_armor.tooltip.heavy": "§9Heavy",
 
   "item.moretools.copper_helmet": "Copper Helmet",
   "item.moretools.copper_chestplate": "Copper Chestplate",

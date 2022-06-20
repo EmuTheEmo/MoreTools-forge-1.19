@@ -15,6 +15,10 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, MoreTools.MOD_ID);
 
+    public static final RegistryObject<Item> OBSIDIAN_CHUNK = ITEMS.register("obsidian_chunk",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.MTOOLS_TAB)));
+
+    //<editor-fold desc="Armor">
     //Copper Armor
     public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet",
             () -> new ArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.HEAD,
@@ -56,6 +60,9 @@ public class ModItems {
     public static final RegistryObject<Item> OBSIDIAN_BOOTS = ITEMS.register("obsidian_boots",
             () -> new ObsidianArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModTab.MTOOLS_TAB)));
+    //</editor-fold>
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
